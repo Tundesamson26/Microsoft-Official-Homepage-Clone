@@ -1,0 +1,344 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fff;
+    color: #000;
+    font-size: 15px;
+    line-height: 1.5;
+}
+.container{
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+ul{
+    list-style-type: none;
+}
+a{
+     text-decoration: none;
+     color: #262626;
+}
+
+/*Navigation menu*/
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    padding: 20px 0;
+    align-items: center;
+    font-size: 13px;
+}
+.microsof-logo{
+    width: 110px;
+}
+.navbar ul{
+    display: flex;
+}
+.navbar ul li{
+    padding: 0 10px;
+}
+.navbar ul li a{
+    padding-bottom: 2px;
+}
+.navbar li a:hover{
+    border-bottom: 2px solid #262626;
+}
+.navbar ul.left-menu{
+    flex: 1;
+    margin-left: 20px;
+}
+.menu-bar{
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    z-index: 2;
+    display: none;
+}
+.btn{
+    display: inline-block;
+    cursor: pointer;
+    border: 0;
+    font-weight: bold;
+    padding: 8px 25px;
+    background: #111;
+    color: #fff;
+    font-size: 15px;
+}
+.btn:hover{
+    opacity: 0.9;
+    text-decoration: underline;
+}
+/*  Showroom styling*/
+
+.showroom{
+    position: relative;
+    top: auto;
+    right: auto;
+    height: 500px;
+    background: url("image/new.png") no-repeat center center/cover;
+    margin: 10px 0px 0px 20px;
+}
+.showroom-text{
+    position: absolute;
+    left: 50px;
+    top: 45%;
+    transform: translate(10%,-30%);
+}
+.showroom h2,
+.showroom p{
+    margin-bottom: 15px;
+}
+.showroom .btn{
+    margin-top: 10px;
+}
+/* Home cards*/
+.home-cards{
+    margin-top: 20px;
+    margin-left: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    align-items: center;
+}
+.home-cards img{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.home-cards h3{
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+.home-cards .M-365 a{
+    display: block;
+    padding-top: 10px;
+    color: #0067b8;
+}
+.home-cards a{
+    display: inline-block;
+    padding-top: 10px;
+    color: #0067b8;
+}
+.home-cards a:hover i{
+    margin-left: 10px;
+}
+/*Outlook styling*/
+.outlook{
+    position: relative;
+    top: 50px;
+    right: auto;
+    height: 400px;
+    background: url("image/outlook.jfif") no-repeat center center/cover;
+    margin: 10px 0px 0px 20px;
+}
+.content{
+    position: absolute;
+    left: 50px;
+    top: 45%;
+    transform: translate(10%,-30%);
+}
+.outlook h2,
+.outlook p{
+    margin-bottom: 15px;
+}
+/*Business*/
+.business-cards{
+    margin-top: 100px;
+    margin-left: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    align-items: center;
+}
+.business-cards img{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.business-cards h3{
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+.business-cards a{
+    display: inline-block;
+    padding-top: 10px;
+    color: #0067b8;
+}
+.business-cards a:hover i{
+    margin-left: 10px;
+}
+/*Covid styling*/
+.covid{
+    display: block;
+    clear: both;
+    text-align: center;
+    float: none;
+    max-width: 100%;
+    margin: 0 auto;
+    background: #e6e6e6;
+    
+}
+.covid-content {
+   text-align: center;
+   margin-top: 15px;
+}
+.covid-content h2{
+    padding: 38px 0 2px;
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 40px;
+}
+.covid p{
+    margin: 5px 0 5px;
+}
+.covid-content a{
+    display: inline-block;
+    padding-top: 10px;
+    color: #000000;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 10px 3px 7px 0;
+}
+.covid-content a:hover i{
+    margin-left: 10px;
+}
+/* Follow*/
+.follow{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 30px 0 30px;
+}
+.follow *{
+    margin-right: 10px;
+}
+.follow p{
+    font-size: 15px;
+    line-height: 20px;
+    color: rgba(0,0,0,.6);
+    padding-right: 12px;
+    margin-bottom: 4px;
+}
+/*Links*/
+.links{
+    position: relative;
+    background: #f2f2f2;
+    color: #616161;
+    font-size: 12px;
+    padding: 35px 0;
+}
+.links-inner{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    align-items: flex-start;
+    justify-self: center;
+}
+.links li{
+    line-height: 2.8;
+}
+/*Footer*/
+.footer{
+    background: #f2f2f2;
+    color: #616161;
+    font-size: 12px;
+    padding: 20px 0;
+}
+.footer-inner{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer div{
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+.footer div i{
+    margin-right: 10px;
+}
+.footer ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer li{
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
+/* responsive*/
+@media (max-width: 700px){
+    .menu-bar{
+        display: block;
+    }
+    .menu-bar:hover{
+        opacity: 0.5;
+    }
+    .navbar ul.left-menu{
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: #f2f2f2;
+        width: 50%;
+        height: 100%;
+        border-right: #ccc 1px solid;
+        opacity: 0.9;
+        padding: 30px;
+        transform: translateX(-500px);
+        transition: transform 0.5s ease-in-out;
+    }
+    .navbar ul.left-menu li{
+        padding: 10px;
+        border-bottom: #ccc solid 1px;
+        font-size: 14px;
+    }
+    .navbar ul.left-menu li:last-child {
+        border-bottom: 0;
+      }
+      .navbar ul.left-menu.show{
+        transform: translateX(-20px);
+      }
+    .showroom{
+        background: none;
+    }
+    .home-cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .business-cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .outlook{
+        background: none;
+    }
+    .links .links-inner{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 500px){
+    .home-cards{
+        grid-template-columns: 1fr;
+    }
+    .business-cards{
+        grid-template-columns: 1fr;
+    }
+    .outlook{
+        background: none;
+    }
+    .links .links-inner{
+        grid-template-columns: 1fr;
+    }
+    .links .links-inner ul{
+        margin-bottom: 20px;
+    }
+}
+
